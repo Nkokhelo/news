@@ -1,0 +1,16 @@
+
+
+    <div class="grid-container">
+      <div class="grid-item" style="display:inline-block;" *ngFor="let n of newsList" >
+        <div *ngIf="n.urlToImage != null || n.description != null">
+          <div class="card">
+            <img class="card-img-top" src="{{n.urlToImage}}" alt="">
+            <div class="card-body">
+              <h5 class="card-title">{{n.title}}</h5>
+              <p class="card-text">{{n.description}}</p>
+              <a href="{{n.url}}" class="btn btn-primary btn-sm">Read more ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
