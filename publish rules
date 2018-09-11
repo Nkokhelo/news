@@ -1,0 +1,13 @@
+create a rposotory online
+
+git init
+
+git add .
+
+git commit -m "Nkokhelo"
+
+git remote add origin git@github.com:Nkokhelo/news.git
+
+git push -u origin master
+
+ngh --dir=dist/NewsApp
